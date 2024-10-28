@@ -5,23 +5,27 @@ body {
     height: 100vh;
     background-color: #efecec;
     flex-direction: column;
+    margin: 0;
 }
-h1{
+
+h1 {
     text-align: center;
-    position: relative;
-    top: 0;
     font-family: "Allura", cursive;
     font-weight: 700;
-    font-style: normal;
     font-size: 4rem;
+    margin-bottom: 20px;
 }
 
 .game-container {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .game-info {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 #gameBoard {
@@ -44,13 +48,13 @@ h1{
     border-radius: 8px;
     transition: transform 0.3s;
 }
-      
+
 .card.flipped, .card.matched {
     background-color: #2ecc71;
     transform: rotateY(180deg);
     cursor: default;
 }
-      
+
 button {
     padding: 10px 20px;
     background-color: #e73636;
@@ -59,7 +63,7 @@ button {
     border-radius: 10px;
     cursor: pointer;
 }
-      
+
 button:hover {
     background-color: #ca3027;
 }
@@ -84,6 +88,7 @@ button:hover {
 .grey-heart {
     background-image: url('./grey-heart.jpg'); 
 }
+
 .failed-screen {
     position: fixed;
     top: 0;
