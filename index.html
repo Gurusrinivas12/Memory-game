@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1>Memory Game</h1>
+<div class="game-container">
+    <div class="game-info">
+        <div class="hearts" id="hearts">
+            <span class="heart red-heart"></span>
+            <span class="heart red-heart"></span>
+            <span class="heart red-heart"></span>
+        </div>
+        <div class="score">Score: <span id="score">0</span></div>
+        <div class="timer">Time: <span id="timer">00:00</span></div>
+        <button id="reset">Reset Game</button>
+    </div>
+    
+    <div class="game-board" id="gameBoard"></div>
+    <div class="failed-screen" id="failedScreen">
+        <h2>Game Over</h2>
+        <p>You made too many mistakes!</p>
+        <button id="playAgain">Play Again</button>
+    </div>
+    
+</div>
+
+<audio id="mistakeSound" src="./wrong-47985.mp3" preload="auto"></audio>
+<audio id="gameOverSound" src="./gta-v-death-sound-effect-102.mp3" preload="auto"></audio>
+
+<script src="index.js"></script>
+</body>
+</html>
