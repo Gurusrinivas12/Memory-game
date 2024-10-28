@@ -20,3 +20,5 @@ Flip two cards at a time to try to find a matching pair.
 Each correct match increases your score by 10 points.
 Three incorrect attempts end the game, triggering the Game Over screen.
 Click Play Again to restart.
+
+The app is deployed on: (https://memory-game1-2b7h.onrender.com/)
